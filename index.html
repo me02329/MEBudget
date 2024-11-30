@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEBudget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to MEBudget</h1>
+        <p>Track your finances simply and effectively.</p>
+    </header>
+    <main>
+        <section id="data-entry">
+            <h2>Enter Your Financial Data</h2>
+            <form id="budget-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="type">Type:</label>
+                <select id="type" name="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                
+                <button type="submit">Add Entry</button>
+            </form>
+        </section>
+        <section id="stats">
+            <h2>Statistics</h2>
+            <div id="stats-output">
+                <p>No data yet. Start adding your entries!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MEBudget. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
